@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ALL BOTS MADE BY HDXJPG</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>ALL BOTS MADE BY HDXJPG</h1>
+    <button id="godzexmd-btn">GODZEXMD</button>
+    <div id="godzexmd-section" style="display:none;">
+      <h2>GODZEXMD</h2>
+      <div class="button-group">
+        <h3>Pair Code Servers</h3>
+        <button class="pair-server" data-server="1">Server 1</button>
+        <button class="pair-server" data-server="2">Server 2</button>
+        <button class="pair-server" data-server="3">Server 3</button>
+        <button class="pair-server" data-server="4">Server 4</button>
+      </div>
+      <div class="button-group">
+        <h3>QR CODE Servers</h3>
+        <button class="qr-server" data-server="1">Server 1</button>
+        <button class="qr-server" data-server="2">Server 2</button>
+      </div>
+      <div class="button-group">
+        <h3>Session ID Generator</h3>
+        <button id="generate-session">Generate Session ID</button>
+        <input type="text" id="session-id" readonly>
+      </div>
+      <div class="button-group">
+        <h3>QR Code Pair</h3>
+        <input type="text" id="qr-input" placeholder="Enter text for QR">
+        <button id="generate-qr">Generate QR Code</button>
+        <canvas id="qr-canvas"></canvas>
+      </div>
+      <div class="button-group">
+        <h3>Termux Deploy Commands</h3>
+        <textarea readonly rows="4">pkg update && pkg upgrade
+pkg install git -y
+git clone https://github.com/HDXJPG/GODZEXMD.git
+cd GODZEXMD
+bash install.sh</textarea>
+      </div>
+      <div class="button-group">
+        <h3>Deploy Directly</h3>
+        <button onclick="window.open('https://herojo.com/deploy?repo=HDXJPG/GODZEXMD','_blank')">Deploy to Herojo</button>
+        <button onclick="window.open('https://render.com/deploy?repo=HDXJPG/GODZEXMD','_blank')">Deploy to Render</button>
+      </div>
+      <button id="back-btn">Back</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
