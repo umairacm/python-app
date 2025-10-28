@@ -1,2 +1,2 @@
-# Bot-Website
-Website For Bot
+# Python -Website
+Website For Python Practice
